@@ -177,4 +177,48 @@ public class MainActivity extends AppCompatActivity
 
         }
     }
+
+    public void bigDodge(View view)
+    {
+        tV3.setVisibility(View.INVISIBLE);
+        tV4.setVisibility(View.INVISIBLE);
+        tV5.setVisibility(View.INVISIBLE);
+        tV6.setVisibility(View.INVISIBLE);
+
+        eT2.setVisibility(View.INVISIBLE);
+        eT3.setVisibility(View.INVISIBLE);
+        eT1.setText("");
+        eT2.setText("");
+        eT3.setText("");
+
+        iW2.setVisibility(View.INVISIBLE);
+        iW3.setVisibility(View.INVISIBLE);
+
+        btn2.setVisibility(View.INVISIBLE);
+        btn3.setVisibility(View.INVISIBLE);
+        resetBtn.setVisibility(View.INVISIBLE);
+
+        num1=rnd.nextInt(90)+10;
+        num2=rnd.nextInt(90)+10;
+        num3=rnd.nextInt(90)+10;
+        num4=rnd.nextInt(90)+10;
+
+        tV1.setText(num1 + " ");
+        tV2.setText(num2 + " ");
+        tV4.setText(num3 + " ");
+        tV6.setText(num4 + " ");
+
+        tV3.setText(num1+num2 +" ");
+        tV5.setText(num1+num2+num3+ " ");
+
+        btn1.setEnabled(true);
+        btn2.setEnabled(true);
+        btn3.setEnabled(true);
+
+        iW2.setImageBitmap(null);
+        iW3.setImageBitmap(null);
+        score = 0;
+
+
+    }
 }
